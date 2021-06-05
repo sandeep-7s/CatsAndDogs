@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        long long c,d,l,mini,maxi;
+        cin>>c>>d>>l;
+         mini=max((c-d)*4,4*d);
+         maxi=d*4+c*4;
+        if(l>=mini and l<=maxi and l%4==0)
+        cout<<"yes"<<endl;
+        else 
+        cout<<"no"<<endl;
+    }
+    return 0;
+}
